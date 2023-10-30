@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="2" result="Failed" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.16.3.0" clr-version="4.0.30319.42000" start-time="2023-10-30 08:39:09Z" end-time="2023-10-30 08:39:14Z" duration="4.764495">
+  <command-line><![CDATA["C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe" J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll --result=TestResult.xml]]></command-line>
+  <test-suite type="Assembly" id="1-1005" name="SpecFlow_BrowserStack.dll" fullname="J:/Project/specflow-browserstack-sdk/SpecFlow_BrowserStack/bin/Debug/net6.0/SpecFlow_BrowserStack.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2023-10-30T08:39:12.5678983Z" end-time="2023-10-30T08:39:14.0146172Z" duration="1.446652" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.13.2.0" clr-version="6.0.22" os-version="Microsoft Windows 10.0.22000" platform="Win32NT" cwd="J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack" machine-name="QUIET" user="Hunter" user-domain="QUIET" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETCoreApp,Version=v6.0" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="netcore-6.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="LevelOfParallelism" value="5" />
+      <property name="ParallelScope" value="Fixtures" />
+      <property name="_PID" value="42612" />
+      <property name="_APPDOMAIN" value="nunit-agent" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="SetUpFixture" id="1-1000" name="[default namespace]" fullname="SpecFlow_BrowserStack_NUnitAssemblyHooks" classname="SpecFlow_BrowserStack_NUnitAssemblyHooks" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="SetUp" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0133216Z" duration="1.437090" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        <stack-trace><![CDATA[   at System.Runtime.Loader.AssemblyLoadContext.LoadFromPath(IntPtr ptrNativeAssemblyLoadContext, String ilPath, String niPath, ObjectHandleOnStack retAssembly)
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at TestObservability.Helper.Logs.LogsHelper.SendLog(String level, String message)
+   at TestObservability.Console.Appender.ConsoleAppender.WriteLine(String value)
+   at System.IO.TextWriter.SyncTextWriter.WriteLine(String value)
+   at System.Console.WriteLine(String value)
+   at TechTalk.SpecFlow.Tracing.DefaultListener.WriteToolOutput(String message)
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.LoadPlugin(String pluginPath, IRuntimePluginLoader pluginLoader, RuntimePluginEvents runtimePluginEvents, UnitTestProviderConfiguration unitTestProviderConfigration, ITraceListener traceListener, Boolean traceMissingPluginAttribute)
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.LoadPlugins(IRuntimeConfigurationProvider configurationProvider, ObjectContainer container, RuntimePluginEvents runtimePluginEvents, SpecFlowConfiguration specFlowConfiguration, UnitTestProviderConfiguration unitTestProviderConfigration, Assembly testAssembly)
+   at TechTalk.SpecFlow.Infrastructure.ContainerBuilder.CreateGlobalContainer(Assembly testAssembly, IRuntimeConfigurationProvider configurationProvider)
+   at TechTalk.SpecFlow.TestRunnerManager.CreateTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder)
+   at TechTalk.SpecFlow.TestRunnerManager.GetTestRunnerManager(Assembly testAssembly, IContainerBuilder containerBuilder, Boolean createIfMissing)
+   at TechTalk.SpecFlow.TestRunnerManager.OnTestRunStart(Assembly testAssembly, IContainerBuilder containerBuilder)
+   at SpecFlow_BrowserStack_NUnitAssemblyHooks.AssemblyInitialize() in J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\obj\Debug\net6.0\NUnit.AssemblyHooks.cs:line 20]]></stack-trace>
+      </failure>
+      <test-suite type="TestSuite" id="1-1006" name="SpecFlow_BrowserStack" fullname="SpecFlow_BrowserStack" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0107119Z" duration="1.434576" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-suite>
+      <test-suite type="TestSuite" id="1-1007" name="Resources" fullname="SpecFlow_BrowserStack.Resources" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0121112Z" duration="1.435880" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-suite>
+      <test-suite type="TestSuite" id="1-1008" name="Features" fullname="SpecFlow_BrowserStack.Resources.Features" runstate="Runnable" testcasecount="2" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0121273Z" duration="1.435896" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1001" name="BStackLocalFeature" fullname="SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature" classname="SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0121305Z" duration="1.435899" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="Description" value="BStack Local" />
+          <property name="Category" value="sample-local-test" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-suite>
+      <test-case id="1-1002" name="OpenBrowserStackLocal" fullname="SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature.OpenBrowserStackLocal" methodname="OpenBrowserStackLocal" classname="SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature" runstate="Runnable" seed="691151718" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0121326Z" duration="1.435901" asserts="0">
+        <properties>
+          <property name="Description" value="Open BrowserStack Local" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-case>
+      <test-suite type="TestFixture" id="1-1003" name="BStackSampleFeature" fullname="SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature" classname="SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature" runstate="Runnable" testcasecount="1" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0124384Z" duration="1.436207" total="0" passed="0" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <properties>
+          <property name="Description" value="BStack Sample" />
+          <property name="Category" value="sample-test" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-suite>
+      <test-case id="1-1004" name="CanAddProductToCart" fullname="SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart" methodname="CanAddProductToCart" classname="SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature" runstate="Runnable" seed="117775259" result="Failed" label="Error" site="Parent" start-time="2023-10-30T08:39:12.5762311Z" end-time="2023-10-30T08:39:14.0124415Z" duration="1.436210" asserts="0">
+        <properties>
+          <property name="Description" value="Can add product to cart" />
+        </properties>
+        <failure>
+          <message><![CDATA[OneTimeSetUp: System.IO.FileNotFoundException : Could not load file or assembly 'C:\Users\Hunter\.nuget\packages\nunit.consolerunner\3.16.3\tools\agents\net6.0\BrowserstackListener.dll'. The system cannot find the file specified.]]></message>
+        </failure>
+      </test-case>
+    </test-suite>
+  </test-suite>
+</test-run>

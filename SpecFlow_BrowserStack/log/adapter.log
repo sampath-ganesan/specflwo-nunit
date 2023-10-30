@@ -1,0 +1,971 @@
+2023-10-29 23:11:17.9110|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-29 23:11:17.9511|INFO|A.b|Setting up adapter
+2023-10-29 23:11:17.9660|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature.OpenBrowserStackLocal|FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-29 23:16:11.4098|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-29 23:16:11.4527|INFO|A.b|Setting up adapter
+2023-10-29 23:16:11.4769|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature.OpenBrowserStackLocal|FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-29 23:17:10.0718|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-29 23:17:10.0718|INFO|A.b|0 : 
+2023-10-29 23:16:15.5812|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-29 23:16:15.8485|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-29 23:16:19.4372|INFO|browserstack_sdk.Program|Starting local
+System.IO.IOException: The process cannot access the file 'J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\log\local.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+   at BrowserStack.BrowserStackTunnel.Run(String accessKey, String folder, String logFilePath, String processType)
+   at BrowserStack.Local.start(List`1 options)
+System.IO.IOException: The process cannot access the file 'J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\log\local.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+   at BrowserStack.BrowserStackTunnel.Run(String accessKey, String folder, String logFilePath, String processType)
+   at BrowserStack.Local.start(List`1 options)
+System.IO.IOException: The process cannot access the file 'J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\log\local.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+   at BrowserStack.BrowserStackTunnel.Run(String accessKey, String folder, String logFilePath, String processType)
+   at BrowserStack.Local.start(List`1 options)
+2023-10-29 23:16:43.1124|ERROR|browserstack_sdk.Program|Failed to start local with error: Binary not found or failed to launch. Make sure that BrowserStackLocal is not already running.
+2023-10-29 23:16:44.7371|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: guhytxvfrbxfravoys4hqczvgu9mhl0o1cd6ny2d
+2023-10-29 23:16:45.4746|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-29 23:16:45.4746|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-29 23:17:06.5865|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature.OpenBrowserStackLocal|FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-29 23:17:07.5953|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/guhytxvfrbxfravoys4hqczvgu9mhl0o1cd6ny2d to view build report
+2023-10-29 23:17:08.0594|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-29T23:17:08.059Z
+
+
+2023-10-29 23:17:10.0873|INFO|A.b|Cleaning up adapter
+2023-10-29 23:17:10.0873|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-29 23:17:10.1455|ERROR|A.b|Couldn't get results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack : System.IO.FileNotFoundException: Could not find file 'C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml'.
+File name: 'C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at A.b.a(String )
+2023-10-30 12:55:28.7380|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 12:55:28.8339|INFO|A.b|Setting up adapter
+2023-10-30 12:55:28.8537|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature.OpenBrowserStackLocal|FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:05:47.8952|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:05:47.9768|INFO|A.b|Setting up adapter
+2023-10-30 13:05:47.9899|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackLocalFeature.OpenBrowserStackLocal)""
+2023-10-30 13:05:48.0021|INFO|A.b|Debugger is attached, setting VSTEST_HOST_DEBUG
+2023-10-30 13:08:43.3492|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:08:43.3799|INFO|A.b|Setting up adapter
+2023-10-30 13:08:43.3958|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:08:43.3958|INFO|A.b|Debugger is attached, setting VSTEST_HOST_DEBUG
+2023-10-30 13:11:26.7318|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:11:26.7318|INFO|A.b|0 : 
+2023-10-30 13:08:48.6655|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:08:48.9815|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:09:01.5828|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Host debugging is enabled. Please attach debugger to testhost process to continue.
+Process Id: 17768, Name: testhost
+
+2023-10-30 13:09:04.6515|INFO|browserstack_sdk.utils|Debugger attached to 17768
+2023-10-30 13:09:04.6515|INFO|browserstack_sdk.Program|Waiting for debugger attach...
+Process Id: 17768, Name: testhost
+
+2023-10-30 13:09:42.0519|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:09:59.0408|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:11:15.4225|INFO|browserstack_sdk.Program|Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:11:21.3561|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/34684077e0cd1e43c25e8fed156e159730b0d69a
+
+
+2023-10-30 13:11:26.7660|INFO|A.b|Cleaning up adapter
+2023-10-30 13:11:26.7685|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:12:22.1958|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:12:22.2183|INFO|A.b|Setting up adapter
+2023-10-30 13:12:22.2306|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:13:52.0553|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:13:52.0553|INFO|A.b|0 : 
+2023-10-30 13:12:27.1892|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:12:27.4760|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:12:55.4734|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:12:57.2075|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:13:44.4949|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-10-30 13:13:52.0553|INFO|A.b|Cleaning up adapter
+2023-10-30 13:13:52.0553|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:15:09.7824|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:15:09.8163|INFO|A.b|Setting up adapter
+2023-10-30 13:15:09.8413|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:17:02.8791|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:17:02.8791|INFO|A.b|0 : 
+2023-10-30 13:15:14.6495|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:15:14.8911|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:16:06.5973|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:16:06.5973|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:16:32.6908|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:16:32.6908|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:16:32.7178|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-10-30 13:17:02.8791|INFO|A.b|Cleaning up adapter
+2023-10-30 13:17:02.8791|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:17:29.3896|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:17:29.4119|INFO|A.b|Setting up adapter
+2023-10-30 13:17:29.4247|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:17:38.8141|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:17:38.8141|INFO|A.b|0 : 
+2023-10-30 13:17:33.6432|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:17:33.8942|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:17:34.2918|ERROR|BrowserStackSDK.Accessibility.Automation|Exception while creating test run form BrowserStack Accessibility Automation: System.Net.WebException: No such host is known. (accessibility.browserstack.com:443)
+ ---> System.Net.Http.HttpRequestException: No such host is known. (accessibility.browserstack.com:443)
+ ---> System.Net.Sockets.SocketException (0x00002AF9): No such host is known.
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses, AddressFamily addressFamily, Int64 startingTimestamp)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress, AddressFamily family)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.HttpWebRequest.<>c__DisplayClass219_0.<<CreateHttpClient>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellation(CancellationToken cancellationToken)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.HttpWebRequest.SendRequest(Boolean async)
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at BrowserStackSDK.Utils.HttpRequest.FireRequest() in D:\a\browserstack-csharp-sdk\browserstack-csharp-sdk\run-browserstack\browserstack-sdk\Utils\HttpRequest.cs:line 57
+   at BrowserStackSDK.Accessibility.Automation.Create() in D:\a\browserstack-csharp-sdk\browserstack-csharp-sdk\run-browserstack\browserstack-sdk\Accessibility\Accessibility.cs:line 56
+2023-10-30 13:17:38.5523|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:17:38.5847|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:17:38.6763|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-10-30 13:17:38.8141|INFO|A.b|Cleaning up adapter
+2023-10-30 13:17:38.8141|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:18:20.4622|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:18:20.4883|INFO|A.b|Setting up adapter
+2023-10-30 13:18:20.5035|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:18:36.6910|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:18:36.6910|INFO|A.b|0 : 
+2023-10-30 13:18:24.8190|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:18:25.1021|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:18:30.4967|ERROR|BrowserStackSDK.Accessibility.Automation|Exception while creating test run form BrowserStack Accessibility Automation: System.Net.WebException: No such host is known. (accessibility.browserstack.com:443)
+ ---> System.Net.Http.HttpRequestException: No such host is known. (accessibility.browserstack.com:443)
+ ---> System.Net.Sockets.SocketException (0x00002AF9): No such host is known.
+   at System.Net.Dns.GetHostEntryOrAddressesCore(String hostName, Boolean justAddresses, AddressFamily addressFamily, Int64 startingTimestamp)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress, AddressFamily family)
+   at System.Net.Sockets.Socket.Connect(String host, Int32 port)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.HttpWebRequest.<>c__DisplayClass219_0.<<CreateHttpClient>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellation(CancellationToken cancellationToken)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpMessageHandlerStage.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.SocketsHttpHandler.Send(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.Send(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.HttpWebRequest.SendRequest(Boolean async)
+   at System.Net.HttpWebRequest.GetResponse()
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at BrowserStackSDK.Utils.HttpRequest.FireRequest() in D:\a\browserstack-csharp-sdk\browserstack-csharp-sdk\run-browserstack\browserstack-sdk\Utils\HttpRequest.cs:line 57
+   at BrowserStackSDK.Accessibility.Automation.Create() in D:\a\browserstack-csharp-sdk\browserstack-csharp-sdk\run-browserstack\browserstack-sdk\Accessibility\Accessibility.cs:line 56
+2023-10-30 13:18:35.6394|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:18:35.6773|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:18:36.5146|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+
+
+2023-10-30 13:18:36.6910|INFO|A.b|Cleaning up adapter
+2023-10-30 13:18:36.6910|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:20:28.1201|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:20:28.1578|INFO|A.b|Setting up adapter
+2023-10-30 13:20:28.1816|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:21:33.1798|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:21:33.1798|INFO|A.b|0 : 
+2023-10-30 13:20:32.9271|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:20:33.2058|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:20:40.2324|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:20:40.2324|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:21:03.4919|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:21:04.4357|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:21:30.9445|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:21:31.9072|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T13:21:31.907Z
+2023-10-30 13:21:32.5437|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/9b425944dee0fae4da084d9dbca22ce9e9856bda
+
+
+2023-10-30 13:21:33.1798|INFO|A.b|Cleaning up adapter
+2023-10-30 13:21:33.1798|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:24:33.0134|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:24:33.0481|INFO|A.b|Setting up adapter
+2023-10-30 13:24:33.0639|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:25:18.9859|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:25:18.9859|INFO|A.b|0 : 
+2023-10-30 13:24:37.7875|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:24:38.0621|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:24:43.6939|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: mjyiml6glenjjtrm5367qudpk2mr3g2c0wuf95xa
+2023-10-30 13:24:44.6634|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:24:44.6634|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:25:15.9747|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:25:17.1049|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/mjyiml6glenjjtrm5367qudpk2mr3g2c0wuf95xa to view build report
+2023-10-30 13:25:17.6663|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T13:25:17.666Z
+2023-10-30 13:25:18.3601|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/8f5b61af1b788bd61eae9b440e60c4335c727990
+
+
+2023-10-30 13:25:18.9859|INFO|A.b|Cleaning up adapter
+2023-10-30 13:25:18.9859|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:25:19.2779|ERROR|A.b|Couldn't get results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack : System.IO.FileNotFoundException: Could not find file 'C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml'.
+File name: 'C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at A.b.a(String )
+2023-10-30 13:27:08.4202|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:27:08.4501|INFO|A.b|Setting up adapter
+2023-10-30 13:27:08.4661|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:28:06.3180|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:28:06.3180|INFO|A.b|0 : 
+2023-10-30 13:27:13.4472|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:27:13.7571|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:27:20.7934|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: 9u7e5eg7jcg7npsruuuyqtoajpywtbw0ivtwgtac
+2023-10-30 13:27:22.1621|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:27:22.1621|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:27:58.2086|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:28:00.8598|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:28:02.2991|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:28:03.6972|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/9u7e5eg7jcg7npsruuuyqtoajpywtbw0ivtwgtac to view build report
+2023-10-30 13:28:04.4757|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T13:28:04.475Z
+2023-10-30 13:28:05.3349|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/b11fb7d70910c0e2a1ce74057f769e6c5a44dea6
+
+
+2023-10-30 13:28:06.3180|INFO|A.b|Cleaning up adapter
+2023-10-30 13:28:06.3180|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:30:12.6291|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:30:12.6547|INFO|A.b|Setting up adapter
+2023-10-30 13:30:12.6722|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:31:11.0323|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:31:11.0323|INFO|A.b|0 : 
+2023-10-30 13:30:17.2111|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:30:17.4982|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:30:25.0896|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: b1tzhdbhkwp6cypdkbstpezu8zngmrl2b5adbdfs
+2023-10-30 13:30:25.9635|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:30:25.9635|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:30:54.8273|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:30:59.5982|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:31:07.5911|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:31:08.9914|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/b1tzhdbhkwp6cypdkbstpezu8zngmrl2b5adbdfs to view build report
+2023-10-30 13:31:10.0132|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T13:31:10.013Z
+2023-10-30 13:31:10.5034|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/649b646e29142ffc69b5fbc06f2cc6e0d47b9acb
+
+
+2023-10-30 13:31:11.0332|INFO|A.b|Cleaning up adapter
+2023-10-30 13:31:11.0332|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:42:10.0083|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:42:10.0427|INFO|A.b|Setting up adapter
+2023-10-30 13:42:10.0588|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:43:14.9106|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:43:14.9106|INFO|A.b|0 : 
+2023-10-30 13:42:15.3444|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:42:15.6809|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:42:22.7528|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: jrelcqlmvkz6xfgyrg9z0zlj0tnw2j9orey2pqt8
+2023-10-30 13:42:23.8005|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:42:23.8005|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:42:50.5465|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:42:59.3215|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:43:10.3189|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:43:11.5544|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/jrelcqlmvkz6xfgyrg9z0zlj0tnw2j9orey2pqt8 to view build report
+2023-10-30 13:43:12.2469|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T13:43:12.246Z
+2023-10-30 13:43:13.4803|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/f79dcc53743d790f45b559f66773655c8ea24c46
+
+
+2023-10-30 13:43:14.9106|INFO|A.b|Cleaning up adapter
+2023-10-30 13:43:14.9106|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 13:46:07.8226|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 13:46:07.8490|INFO|A.b|Setting up adapter
+2023-10-30 13:46:07.8625|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 13:47:03.1259|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 13:47:03.1261|INFO|A.b|0 : 
+2023-10-30 13:46:12.6190|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 13:46:12.9066|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 13:46:18.6239|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: 58j1smnip4iuokyxhblzfbru6sf4afah93ga8sca
+2023-10-30 13:46:19.6675|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 13:46:19.6675|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 13:46:47.7007|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:46:57.7989|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:46:59.3060|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 13:47:01.0875|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/58j1smnip4iuokyxhblzfbru6sf4afah93ga8sca to view build report
+2023-10-30 13:47:01.6214|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T13:47:01.621Z
+2023-10-30 13:47:02.3547|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/0fc807fdc69c8b2690e6e0770033a2bc8060850e
+
+
+2023-10-30 13:47:03.1261|INFO|A.b|Cleaning up adapter
+2023-10-30 13:47:03.1261|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 14:02:20.5535|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 14:02:20.5763|INFO|A.b|Setting up adapter
+2023-10-30 14:02:20.5880|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 14:03:18.3046|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 14:03:18.3046|INFO|A.b|0 : 
+2023-10-30 14:02:25.5729|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 14:02:25.9506|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 14:02:33.2156|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: uoyfmzr0lmh3wnfrvi0q2i7pnxinxx0h5iej8zrr
+2023-10-30 14:02:33.9866|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 14:02:33.9866|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 14:02:57.2240|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 14:03:10.6973|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_2\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 14:03:13.4898|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 14:03:15.5535|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/uoyfmzr0lmh3wnfrvi0q2i7pnxinxx0h5iej8zrr to view build report
+2023-10-30 14:03:16.5524|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T14:03:16.552Z
+2023-10-30 14:03:17.0568|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/5807399bed54887ea024390316fe3ceae00515b1
+
+
+2023-10-30 14:03:18.3046|INFO|A.b|Cleaning up adapter
+2023-10-30 14:03:18.3046|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 14:21:26.2497|INFO|BStack.VisualStudio.TestAdapter.BStackTestExecutor|NUnit test stated from test explorer
+2023-10-30 14:21:26.2718|INFO|A.b|Setting up adapter
+2023-10-30 14:21:26.2884|INFO|A.b|Invoking browserstack-sdk with args: --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --filter ""(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)""
+2023-10-30 14:22:34.1059|INFO|A.b|Exec: dotnet browserstack-sdk --skip-build-browserstack "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll"
+2023-10-30 14:22:34.1059|INFO|A.b|0 : 
+2023-10-30 14:21:30.7521|INFO|browserstack_sdk.Program|Detected Selenium version 4.1.0
+2023-10-30 14:21:30.9908|INFO|browserstack_sdk.Program|Detected dotnet version 7.0.401
+2023-10-30 14:21:37.5440|INFO|TestObservability.BuildLifeCycle|[OBSERVABILITY] Build Started Successfully, build id: gmkbkfoy3xut9umgq0cljmdntr0xvmgthl2xaoub
+2023-10-30 14:21:38.3830|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Chrome browsers.
+2023-10-30 14:21:38.3896|WARN|BrowserStackSDK.Accessibility.Automation|Accessibility Automation will run only on Desktop browsers
+2023-10-30 14:22:30.3677|INFO|browserstack_sdk.Program|
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "running bat file" 
+"running bat file"
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>cd J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack 
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>dotnet test "J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack\bin\Debug\net6.0\SpecFlow_BrowserStack.dll" --filter "(FullyQualifiedName=SpecFlow_BrowserStack.Resources.Features.BStackSampleFeature.CanAddProductToCart)" --settings "C:\Users\Hunter\AppData\Local\Temp\.browserstack\.runsettings" --no-build  "--logger:trx;LogFileName=C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml" 
+The following arguments have been ignored : "--no-build"
+Microsoft (R) Test Execution Command Line Tool Version 17.7.1 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+Results File: C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_0\NUnit-Browserstack.xml
+
+J:\Project\specflow-browserstack-sdk\SpecFlow_BrowserStack>echo "completed bat file" 
+"completed bat file"
+
+2023-10-30 14:22:31.7108|INFO|TestObservability.BuildLifeCycle|Visit https://observability.browserstack.com/builds/gmkbkfoy3xut9umgq0cljmdntr0xvmgthl2xaoub to view build report
+2023-10-30 14:22:32.2073|INFO|BrowserStackSDK.Accessibility.Automation|BrowserStack Accessibility Automation Test Run marked as completed at 2023-10-30T14:22:32.207Z
+2023-10-30 14:22:33.2613|INFO|browserstack_sdk.utils|View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/076c8f09e0e9c41029c3666f36c35c4eb32411c6
+
+
+2023-10-30 14:22:34.1059|INFO|A.b|Cleaning up adapter
+2023-10-30 14:22:34.1059|INFO|A.b|Getting results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack
+2023-10-30 14:22:34.1362|ERROR|A.b|Couldn't get results from: C:\Users\Hunter\AppData\Local\Temp\.browserstack : System.IO.FileNotFoundException: Could not find file 'C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml'.
+File name: 'C:\Users\Hunter\AppData\Local\Temp\.browserstack\results_dotnet\result_1\NUnit-Browserstack.xml'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategy(FileStream fileStream, String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Int64 preallocationSize)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(String filename)
+   at A.b.a(String )
